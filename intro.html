@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+            <style></style>
+        </head>
+        <body>
+            
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #AAB6D4;
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        /* Estilo del encabezado */
+        header {
+            background: linear-gradient(135deg, #4B66A6, #AAB6D4);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 3em;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 30px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
+
+        /* Estilos del contenido principal */
+        main {
+            margin: 40px auto;
+            padding: 40px;
+            background-color: #FFFFFF;
+            max-width: 900px;
+            border-radius: 12px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            color: #4B66A6;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: #AAB6D4;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            border-radius: 4px;
+        }
+
+        section p {
+            font-size: 1.2em;
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+
+        /* Estilo de la tabla de horario */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #4B66A6;
+        }
+
+        th {
+            background-color: #4B66A6;
+            color: #ffffff;
+        }
+
+        td {
+            background-color: #AAB6D4;
+        }
+
+        /* Estilo del formulario */
+        .form-section {
+            margin-top: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        input, select {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #4B66A6;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4B66A6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333333;
+        }
+
+        /* Estilo del pie de página */
+        footer {
+            background: linear-gradient(135deg, #4B66A6, #AAB6D4);
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+            letter-spacing: 1px;
+        }
+    </style>
+
+
+    <header>
+        <h1>La Marató 2024</h1>
+        <nav>
+            <ul>
+                <li><a href="intro.html"><b>La Marató 2024</b></a></li>
+                <li><a href="zumba.html"><b>Classe de zumba</b></a></li>
+                <li><a href="paella.html"><b>Paella solidària</b></a></li>
+            </ul>
+        </nav>
+    </header>
+  
+ 
+
+
+
+    
+    <main>
+    
+            
+            <section>
+    <h2>Què és La Marató de TV3 de 2024? <img src="data:image/png;base64,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" width="150" height="25"></h2>
+    <p>
+        <b>La Marató de TV3</b> és un dels esdeveniments solidaris més importants de Catalunya, organitzat per la Corporació Catalana de Mitjans Audiovisuals. Des del 1992, aquest programa té com a objectiu recaptar fons per a la investigació de malalties greus i sensibilitzar la població sobre la seva realitat. Cada any, La Marató aconsegueix mobilitzar milions de ciutadans que contribueixen amb les seves donacions i participació en diverses activitats, demostrant el gran esperit solidari de la societat catalana. L'edició de 2024 se centrarà en les <b>malalties neurodegeneratives</b>, un conjunt de patologies que afecten el sistema nerviós i alteren greument la qualitat de vida de les persones.
+    </p>
+    
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malalties Respiratòries - La Marató 2024</title>
+
+
+    <h1><b>Malalties respiratòries tractades a La Marató 2024</b></h1>
+    <ul>
+        <li><b>Asma</b>: Malaltia crònica que inflama i estreta les vies respiratòries, causant dificultats per respirar.</li>
+        <li><b>Malaltia Pulmonar Obstructiva Crònica (MPOC)</b>: Trastorn progressiu que limita el flux d'aire i dificulta la respiració.</li>
+        <li><b>Fibrosi Pulmonar</b>: Condició en què els teixits dels pulmons es cicatritzen i dificulten la funció respiratòria.</li>
+        <li><b>Apnea del Son</b>: Trastorn que provoca interrupcions repetides de la respiració durant el son.</li>
+        <li><b>Fibrosi Quística</b>: Malaltia genètica que afecta els pulmons i el sistema digestiu amb acumulació de mucositat espessa.</li>
+        <li><b>Càncer de Pulmó</b>: Malaltia on es desenvolupen cèl·lules cancerígenes als teixits pulmonars.</li>
+        <li><b>Infeccions Respiratòries Cròniques</b>: Condicions com la bronquiectàsia que causen inflamació i infeccions recurrents.</li>
+        <li><b>COVID-19 i seqüeles respiratòries</b>: Danys persistents causats per la infecció del SARS-CoV-2.</li>
+    </ul>
+
+
+
+    <p>
+        L’esdeveniment, que combina entreteniment, testimonis emotius i divulgació científica, és una mostra del compromís col·lectiu per construir una societat més empàtica i solidària. La Marató de TV3 de 2024 promet ser una oportunitat única per demostrar que, junts, podem superar qualsevol repte i ajudar a fer realitat un futur millor per a tothom.
+    </p>
+</section>
+
+<div style="text-align: center;">
+    <img src="https://serveiseducatius.xtec.cat/anoia/wp-content/uploads/usu765/2024/12/Poster_page-0001.jpg" width="300" height="500" alt="Pòster La Marató 2024">
+</div>
+        
+   </main>
+    <footer>
+        <p>© La Marató 2024. Institut De Vic.</p>
+    </footer>
+
+
+            <script>nav ul li a {
+    position: relative;
+    overflow: hidden;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transition: left 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    left: 0;
+}</script>
+        
+    
+</body>
